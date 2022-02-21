@@ -1,5 +1,5 @@
 import { Form, FormInput, FormLabel, FormTitle, Label, MessageBox, StyledButton } from "./Style";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
@@ -7,9 +7,12 @@ const ContactForm = () => {
     const { t } = useTranslation();
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+    const formRef = useRef();
 
     const submitForm = (event) => {
        alert(`Submitted data: [subject: ${subject}, message: ${message}]`);
+       setSubject('');
+       setMessage('');
        event.preventDefault();
     };
 
@@ -29,7 +32,7 @@ const ContactForm = () => {
     return (
         <>
             <FormTitle>{formTitle}</FormTitle>
-            <Form onSubmit={submitForm}>
+            <Form ref={formRef} onSubmit={submitForm}>
                 <FormLabel>
                     <Label>{subjectLabel}:</Label>
                     <FormInput onChange={handleSubjectChange} value={subject} type="text" />

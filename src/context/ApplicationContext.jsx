@@ -2,6 +2,9 @@ import i18next from "i18next";
 import React, { useState } from "react";
 import { personalData, servicesData } from "./data";
 
+const lang = localStorage.getItem('language');
+const defaultLanguage = 'en';
+
 const defaultState = {
     personAbout: null
   };
@@ -21,12 +24,17 @@ const defaultState = {
 
     const [personAbout, setPersonAbout] = useState(personalData);
     const [services, setServices] = useState(servicesData);
-    const [language, setLanguage] = useState('en');
+    const [language, setLanguage] = useState(lang ? lang : defaultLanguage);
+
+    const chooseLanguage = () => {
+      return language === 'en' ? 'sr' : 'en';
+    };
 
     const changeLanguage = () => {
-        i18next.changeLanguage(language === 'en' ? 'sr' : 'en');
-        localStorage.setItem('language', language === 'en' ? 'sr' : 'en');
-        setLanguage(language === 'en' ? 'sr' : 'en');
+      const newLanguage = chooseLanguage();
+        i18next.changeLanguage(newLanguage);
+        localStorage.setItem('language', newLanguage);
+        setLanguage(newLanguage);
     };
   
     const state = {
