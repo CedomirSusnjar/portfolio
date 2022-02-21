@@ -1,0 +1,26 @@
+{
+  "header": {
+    "about": "About me",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "homepage": {
+    "aboutTitle": "About me",
+    "servicesTitle": "Services"
+  },
+  "about": {
+    "name": "Name",
+    "born": "Born",
+    "education": "Education",
+    "position": "Position"
+  },
+  "contact": {
+    "phoneNumber": "Phone number",
+    "email": "E-mail",
+    "address": "Address",
+    "submitDataTitle": "Submit your data",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Submit"
+  }
+}

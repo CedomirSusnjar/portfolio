@@ -1,0 +1,26 @@
+{
+  "header": {
+    "about": "O meni",
+    "services": "Projekti",
+    "contact": "Kontakt"
+  },
+  "homepage": {
+    "aboutTitle": "O meni",
+    "servicesTitle": "Projekti"
+  },
+  "about": {
+    "name": "Ime i prezime",
+    "born": "Rođen",
+    "education": "Obrazovanje",
+    "position": "Pozicija"
+  },
+  "contact": {
+    "phoneNumber": "Broj telefona",
+    "email": "E-mail",
+    "address": "Adresa",
+    "submitDataTitle": "Pošalji svoje podatke",
+    "subject": "Predmet",
+    "message": "Poruka",
+    "submit": "Pošalji"
+  }
+}

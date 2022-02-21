@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './components/layout/header/Header';
+import { Route } from "react-router";
+import Homepage from './pages/homepage/Homepage';
+import Contact from './pages/contact/Contact';
+import Footer from './components/layout/footer/Footer';
+import { ThemeProvider } from "styled-components";
+import theme from './style/theme';
+import ApplicationProvider from './context/ApplicationContext';
+import initializeI18N from "./i18n/init";
+
+initializeI18N();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <ApplicationProvider>
+      <ThemeProvider theme={theme}>
+          <Header />
+          <Routes>
+            <Route path='/' element={<Homepage />}/>
+            <Route path='/contact' element={<Contact />}/>
+          </Routes>
+          <Footer />
+      </ThemeProvider>
+      </ApplicationProvider>
+    </BrowserRouter>
   );
 }
 
