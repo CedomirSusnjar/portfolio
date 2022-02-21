@@ -17,32 +17,32 @@ export const personalData = {
 
 export const servicesData = [
     {
-        name: 'm:Go - mobile app',
+        title: 'm:Go - mobile app',
         about: 'Mobile app for paying parking tickets and for paying phone bills. Gives TV schedule and other provider services review.',
         image: mobileAppImage
     },
     {
-        name: 'm:Go - admin app',
+        title: 'm:Go - admin app',
         about: 'Administrator application for maintenance of m:Go mobile app.',
         image: webApplication
     },
     {
-        name: 'Engagement TV',
+        title: 'Engagement TV',
         about: 'Mobile app for user participation in online polls, questionaires and etc.',
         image: mobileAppImage
     },
     {
-        name: 'Wiener insurance webshop',
+        title: 'Wiener insurance webshop',
         about: 'Web application for creating insurance policy. Also WebAgent module included for company employeers working as insurance sellers.',
         image: webApplication
     },
     {
-        name: 'GIS Configurator',
+        title: 'GIS Configurator',
         about: 'Web app that supports GIS system. Gives user posibillity to configure almost everything in GIS system.',
         image: webApplication
     },
     {
-        name: 'ePostBox',
+        title: 'ePostBox',
         about: 'Mobile app for paying bills. Enables creating of templates for paying. Gives statistics charts for all payments and payments by category.',
         image: mobileAppImage
     }

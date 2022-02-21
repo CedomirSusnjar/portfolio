@@ -6,9 +6,9 @@ const Footer = () => {
 
     return (
         <Container>
-            {Object.values(socialMediaLinks).map(value => {
+            {Object.values(socialMediaLinks).map((value, index) => {
                 return (
-                    <SocialIcon style={iconStyle} url={value} />
+                    <SocialIcon key={index} style={iconStyle} url={value} />
                 );
             })}
         </Container>

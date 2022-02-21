@@ -9,9 +9,9 @@ const Projects = () => {
 
     return (
         <Container>
-            {services.map(project => {
+            {services.map((project, index) => {
                 return (
-                    <Card {...project}/>
+                    <Card key={index} {...project}/>
                 );
             })}
         </Container>

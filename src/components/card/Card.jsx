@@ -1,9 +1,9 @@
 import { Container, Content, ProjectAbout, ProjectImage, Title } from "./Style";
 
-const Card = ({name, about, image}) => {
+const Card = ({title, about, image}) => {
     return (
         <Container>
-            <Title>{name}</Title>
+            <Title>{title}</Title>
             <Content>
                 <ProjectImage image={image}/>
                 <ProjectAbout>{about}</ProjectAbout>

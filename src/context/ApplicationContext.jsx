@@ -26,12 +26,12 @@ const defaultState = {
     const [services, setServices] = useState(servicesData);
     const [language, setLanguage] = useState(lang ? lang : defaultLanguage);
 
-    const chooseLanguage = () => {
+    const getCurrentLanguage = () => {
       return language === 'en' ? 'sr' : 'en';
     };
 
     const changeLanguage = () => {
-      const newLanguage = chooseLanguage();
+      const newLanguage = getCurrentLanguage();
         i18next.changeLanguage(newLanguage);
         localStorage.setItem('language', newLanguage);
         setLanguage(newLanguage);
