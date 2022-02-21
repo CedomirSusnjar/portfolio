@@ -16,7 +16,7 @@ const initializeI18N = () => {
       },
     },
     lng: localStorage.getItem('language'),
-    fallbackLng: "sr",
+    fallbackLng: "en",
   });
 };
 

@@ -2,7 +2,7 @@ import mobileAppImage from '../assets/mobile-app.png';
 import webApplication from '../assets/application.png';
 
 export const personalData = {
-    name: 'Cedomir Susnjar',
+    name: 'Čedomir Šušnjar',
     born: '07.11.1996, Banja Luka, Republic of Srpska, Bosnia and Herzegovina',
     education: 'Graduate from University of Banja Luka, Faculty of Electrical engineering, Software engineer',
     position: 'Frontend engineer',
